@@ -17,7 +17,7 @@ cat <<-EOF > /etc/v2ray/config.json
       "clients": [
         {
           "id": "${UUID}",
-          "alterId": ${alterID}
+          "alterId": 64
         }
       ]
     },
