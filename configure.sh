@@ -37,4 +37,4 @@ cat <<-EOF > /etc/Xray/config.json
   ]
 }
 EOF
-/usr/bin/Xray/Xray -config=/etc/Xray/config.json
+/usr/bin/Xray/xray -config=/etc/Xray/config.json
