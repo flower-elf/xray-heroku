@@ -30,8 +30,25 @@ cat <<-EOF > /etc/v2ray/config.json
   {
     "protocol": "freedom",
     "settings": {}
+  },
+    {
+      "protocol": "blackhole",
+      "settings": {},
+      "tag": "block"
+    }
+  ],
+  "routing": {
+    "domainStrategy": "AsIs",
+    "rules": [
+      {
+        "type": "field",
+        "outboundTag": "block",
+        "protocol": [
+          "bittorrent"
+        ]
+      }
+    ]
   }
-  ]
 }
 EOF
 /usr/bin/v2ray/v2ray -config=/etc/v2ray/config.json
