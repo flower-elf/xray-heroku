@@ -23,7 +23,7 @@ cat <<-EOF > /etc/Xray/config.json
       ]
     },
     "streamSettings": {
-      "network": "ws"
+      "network": "ws",
     "wsSettings": {
         "path": "/"
         }
