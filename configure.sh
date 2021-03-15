@@ -15,6 +15,7 @@ cat <<-EOF > /etc/Xray/config.json
     "port": ${PORT},
     "protocol": "vless",
     "settings": {
+      "decryption":"none",
       "clients": [
         {
           "id": "${UUID}",
