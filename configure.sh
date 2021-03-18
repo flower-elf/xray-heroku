@@ -35,7 +35,12 @@ cat <<-EOF > /etc/v2ray/config.json
       "protocol": "blackhole",
       "settings": {},
       "tag": "block"
-    }
+    },
+    {
+      "protocol": "blackhole",
+      "settings": {},
+      "tag": "invalid"
+     }
   ],
   "routing": {
     "domainStrategy": "AsIs",
@@ -46,6 +51,13 @@ cat <<-EOF > /etc/v2ray/config.json
         "protocol": [
           "bittorrent"
         ]
+      },
+      {
+        "domain":[
+         "pingcong.rocks"
+       ],
+       "type":"field",
+       "outboundTag":"invalid"
       }
     ]
   }
