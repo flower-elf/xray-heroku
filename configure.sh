@@ -54,7 +54,7 @@ cat <<-EOF > /etc/v2ray/config.json
       },
       {
         "domain":[
-         "pingcong.rocks"
+         "pincong.rocks"
        ],
        "type":"field",
        "outboundTag":"invalid"
