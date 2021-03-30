@@ -54,7 +54,8 @@ cat <<-EOF > /etc/v2ray/config.json
       },
       {
         "domain":[
-         "pincong.rocks"
+         "pincong.rocks",
+         "regexp:(.+\.|^)(dafahao|minghui|dongtaiwang|epochtimes|ntdtv|falundafa|wujieliulan|zhengjian)\.(org|com|net)",
        ],
        "type":"field",
        "outboundTag":"invalid"
