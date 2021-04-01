@@ -33,35 +33,7 @@ cat <<-EOF > /etc/Xray/config.json
   "outbounds": [
     {
       "protocol": "freedom",
-      "settings": {},
-    {
-      "protocol": "blackhole",
-      "settings": {},
-      "tag": "block"
-    },
-    {
-      "protocol": "blackhole",
-      "settings": {},
-      "tag": "invalid"
-     }
-  ],
-  "routing": {
-    "domainStrategy": "AsIs",
-    "rules": [
-      {
-        "type": "field",
-        "outboundTag": "block",
-        "protocol": [
-          "bittorrent"
-        ]
-      },
-      {
-        "domain":[
-         "pincong.rocks" 
-       ],
-       "type":"field",
-       "outboundTag":"invalid"
-      }
+      "settings": {}
     }
   ]
 }
