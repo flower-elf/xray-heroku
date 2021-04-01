@@ -13,7 +13,7 @@ cat <<-EOF > /etc/Xray/config.json
   {
     "listen": "0.0.0.0",
     "port": ${PORT},
-    "protocol": "vless",
+    "protocol": "vmess",
     "settings": {
       "decryption":"none",
       "clients": [
