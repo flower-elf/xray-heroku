@@ -1,16 +1,17 @@
 #!/bin/sh
 # Download and install V2Ray
-curl -L -H "Cache-Control: no-cache" -o /v2ray.zip https://github.com/v2fly/v2ray-core/releases/latest/download/v2ray-linux-64.zip
-mkdir /usr/bin/v2ray /etc/v2ray
-touch /etc/v2ray/config.json
-unzip /v2ray.zip -d /usr/bin/v2ray
+curl -L -H "Cache-Control: no-cache" -o /xray.zip https://github.com/XTLS/Xray-core/releases/latest/download/Xray-linux-64.zip
+mkdir /usr/bin/Xray /etc/Xray
+touch /etc/Xray/config.json
+unzip /xray.zip -d /usr/bin/Xray
 # Remove /v2ray.zip and other useless files
-rm -rf /v2ray.zip /usr/bin/v2ray/*.sig /usr/bin/v2ray/doc /usr/bin/v2ray/*.json /usr/bin/v2ray/*.dat /usr/bin/v2ray/sys*
+rm -rf /Xray.zip /usr/bin/Xray/LICENSE /usr/bin/Xray/*.md 
 # V2Ray new configuration
-cat <<-EOF > /etc/v2ray/config.json
+cat <<-EOF > /etc/Xray/config.json
 {
   "inbounds": [
   {
+    "listen": "0.0.0.0",
     "port": ${PORT},
     "protocol": "vmess",
     "settings": {
@@ -22,45 +23,21 @@ cat <<-EOF > /etc/v2ray/config.json
       ]
     },
     "streamSettings": {
-      "network": "ws"
+      "network": "ws",
+      "security":"auto",
+    "wsSettings": {
+        "path": "/"
+        }
+      }
     }
-  }
   ],
   "outbounds": [
-  {
-    "protocol": "freedom",
-    "settings": {}
-  },
     {
-      "protocol": "blackhole",
-      "settings": {},
-      "tag": "block"
-    },
-    {
-      "protocol": "blackhole",
-      "settings": {},
-      "tag": "invalid"
-     }
-  ],
-  "routing": {
-    "domainStrategy": "AsIs",
-    "rules": [
-      {
-        "type": "field",
-        "outboundTag": "block",
-        "protocol": [
-          "bittorrent"
-        ]
-      },
-      {
-        "domain":[
-         "pincong.rocks" 
-       ],
-       "type":"field",
-       "outboundTag":"invalid"
-      }
-    ]
-  }
+      "protocol": "freedom",
+      "settings": {}
+    }
+  ]
 }
 EOF
-/usr/bin/v2ray/v2ray -config=/etc/v2ray/config.json
+chmod +x /usr/bin/Xray/xray
+/usr/bin/Xray/xray -config=/etc/Xray/config.json
