@@ -1,9 +1,9 @@
 #!/bin/sh
 # Download and install V2Ray
-curl -L -H "Cache-Control: no-cache" -o /v2ray.zip https://github.com/XTLS/Xray-core/releases/latest/download/Xray-linux-64.zip
+curl -L -H "Cache-Control: no-cache" -o /xray.zip https://github.com/XTLS/Xray-core/releases/latest/download/Xray-linux-64.zip
 mkdir /usr/bin/Xray /etc/Xray
 touch /etc/Xray/config.json
-unzip /v2ray.zip -d /usr/bin/Xray
+unzip /xray.zip -d /usr/bin/Xray
 # Remove /v2ray.zip and other useless files
 rm -rf /Xray.zip /usr/bin/Xray/LICENSE /usr/bin/Xray/*.md 
 # V2Ray new configuration
