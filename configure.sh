@@ -40,7 +40,6 @@ cat <<-EOF > /etc/Xray/config.json
         "tag": "block",
         "protocol": "blackhole"
     },
-    ],
     "routing": {
     "domainStrategy": "AsIs",
     "rules": [
