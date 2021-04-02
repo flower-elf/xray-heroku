@@ -35,23 +35,7 @@ cat <<-EOF > /etc/Xray/config.json
     {
       "protocol": "freedom",
       "settings": {}
-    },
-    {
-        "tag": "block",
-        "protocol": "blackhole"
-    },
-    "routing": {
-    "domainStrategy": "AsIs",
-    "rules": [
-        {
-            "type": "field",
-            "domain": [
-                "doubleclick.net",
-                "pincong.rocks"
-             ],
-            "outboundTag": "block"
-        },
-     }
+    }
   ]
 }
 EOF
