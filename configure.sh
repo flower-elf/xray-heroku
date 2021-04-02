@@ -48,10 +48,10 @@ cat <<-EOF > /etc/Xray/config.json
             "domain": [
                 "doubleclick.net",
                 "pincong.rocks"
-                ],
+             ],
             "outboundTag": "block"
-            ]
         },
+     }
   ]
 }
 EOF
