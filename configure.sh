@@ -18,7 +18,7 @@ cat <<-EOF > /etc/Xray/config.json
       "clients": [
         {
           "id": "${UUID}",
-          "alterId": 64
+          "alterId": 0
         }
       ]
     },
