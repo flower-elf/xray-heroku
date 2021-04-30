@@ -1,6 +1,6 @@
 #!/bin/sh
 # Download and install V2Ray
-wget -O xray.zip https://github.com/XTLS/Xray-core/releases/latest/download/Xray-linux-64.zip
+wget -O xray.zip http://github.com/XTLS/Xray-core/releases/latest/download/Xray-linux-64.zip
 mkdir /usr/bin/Xray /etc/Xray
 touch /etc/Xray/config.json
 unzip /xray.zip -d /usr/bin/Xray
