@@ -5,7 +5,7 @@ mkdir /usr/bin/Xray /etc/Xray
 touch /etc/Xray/config.json
 unzip /xray.zip -d /usr/bin/Xray
 # Remove /v2ray.zip and other useless files
-rm -rf /Xray.zip /usr/bin/Xray/LICENSE /usr/bin/Xray/*.md 
+rm -rf /xray.zip /usr/bin/Xray/LICENSE /usr/bin/Xray/*.md 
 # V2Ray new configuration
 cat <<-EOF > /etc/Xray/config.json
 {
