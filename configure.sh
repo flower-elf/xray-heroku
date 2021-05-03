@@ -26,7 +26,7 @@ cat <<-EOF > /etc/Xray/config.json
       "network": "ws",
       "security":"auto",
     "wsSettings": {
-        "path": "/"
+        "path": "${path}"
         }
       }
     }
