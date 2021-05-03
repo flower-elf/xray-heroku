@@ -26,7 +26,6 @@ cat <<-EOF > /etc/Xray/config.json
             {
                 "name": "process.glaorg.top",
                 "dest": 443 ,// 或者回落到其它也防探测的代理
-                "alpn": "h2"
             }
         ]
     },
