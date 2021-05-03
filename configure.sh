@@ -22,6 +22,12 @@ cat <<-EOF > /etc/Xray/config.json
         }
       ]
     },
+     "fallbacks": [
+            {
+                "dest": process.glaorg.top:443 // 或者回落到其它也防探测的代理
+            }
+        ]
+    },
     "streamSettings": {
       "network": "ws",
       "security":"auto",
