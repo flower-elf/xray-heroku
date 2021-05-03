@@ -6,6 +6,10 @@
 		"UUID": {
 			"description": "XRay UUID",
 			"value": "ad806487-2d26-4636-98b6-ab85cc8521f7"
+		},
+		"path": {
+			"description": "XRay path",
+			"value": "/"
 		}	
 	},
 	"website": "https://www.baidu.com",
