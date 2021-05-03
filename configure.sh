@@ -20,14 +20,9 @@ cat <<-EOF > /etc/Xray/config.json
           "id": "${UUID}",
           "alterId": 0
         }
-      ]
-    },
-     "fallbacks": [
-            {
-                "dest": "process.glaorg.top:443" // 或者回落到其它也防探测的代理
-            }
-        ]
-    },
+      ],
+      "disableInsecureEncryption": true
+    },  
     "streamSettings": {
       "network": "ws",
       "security":"auto",
