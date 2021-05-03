@@ -22,14 +22,12 @@
 
 `UUID` > `一个 UUID，供用户连接时验证身份使用`。
 
-### TODO
-
 `path` > `连接路径，用于隐藏`。
 
 
 ## 注意
 
-WebSocket 路径为 /。（后期可修改）
+WebSocket 默认路径为 /。（可修改）
 
 AlterID 为 0。
 
