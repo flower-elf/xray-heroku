@@ -25,7 +25,7 @@ cat <<-EOF > /etc/Xray/config.json
      "fallbacks": [
             {
                 "name": "process.glaorg.top",
-                "dest": 443 ,// 或者回落到其它也防探测的代理
+                "dest": 443 // 或者回落到其它也防探测的代理
             }
         ]
     },
