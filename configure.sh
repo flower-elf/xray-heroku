@@ -12,7 +12,7 @@ cat <<-EOF > /etc/Xray/config.json
   "inbounds": [
   {
     "port": ${PORT},
-    "protocol": "vless",
+    "protocol": "vmess",
     "settings": {
       "clients": [
         {
