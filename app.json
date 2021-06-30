@@ -12,7 +12,7 @@
 			"value": "/"
 		}	
 	},
-	"website": "https://www.baidu.com",
+	"website": "http://localhost",
 	"repository": "https://github.com/raindrops2005/v2ray-heroku-new",
 	"stack": "container"
 }
