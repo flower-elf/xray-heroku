@@ -13,6 +13,6 @@
 		}	
 	},
 	"website": "http://localhost",
-	"repository": "https://github.com/raindrops2005/v2ray-heroku-new",
+	"repository": "https://github.com/raindrops2005/xray-heroku",
 	"stack": "container"
 }
