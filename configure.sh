@@ -1,12 +1,12 @@
 #!/bin/sh
-# Download and install V2Ray
+# Download and install xray
 wget -q -O xray.zip http://github.com/XTLS/Xray-core/releases/latest/download/Xray-linux-64.zip
 mkdir /usr/bin/Xray /etc/Xray
 touch /etc/Xray/config.json
 unzip /xray.zip -d /usr/bin/Xray
-# Remove /v2ray.zip and other useless files
+# Remove /xray.zip and other useless files
 rm -rf /xray.zip /usr/bin/Xray/LICENSE /usr/bin/Xray/*.md /usr/bin/Xray/*.dat
-# V2Ray new configuration
+# xray new configuration
 cat <<-EOF > /etc/Xray/config.json
 {
   "inbounds": [
