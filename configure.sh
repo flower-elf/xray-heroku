@@ -9,34 +9,28 @@ rm -rf /xray.zip /usr/bin/Xray/LICENSE /usr/bin/Xray/*.md /usr/bin/Xray/*.dat
 # xray new configuration
 cat <<-EOF > /etc/Xray/config.json
 {
-  "inbounds": [
-  {
-    "port": ${PORT},
-    "protocol": "vmess",
-    "settings": {
-      "clients": [
+    "inbounds": [
         {
-          "id": "${UUID}",
-          "alterId": 0
+            "port": $PORT,
+            "protocol": "vless",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "$UUID"
+                    }
+                ],
+		  "decryption": "none"
+            },
+            "streamSettings": {
+                "network": "ws"
+            }
         }
-      ],
-      "disableInsecureEncryption": true
-    },  
-    "streamSettings": {
-      "network": "ws",
-      "security":"auto",
-    "wsSettings": {
-        "path": "${path}"
+    ],
+    "outbounds": [
+        {
+            "protocol": "freedom"
         }
-      }
-    }
-  ],
-  "outbounds": [
-    {
-      "protocol": "freedom",
-      "settings": {}
-    }
-  ]
+    ]
 }
 EOF
 chmod +x /usr/bin/Xray/xray
