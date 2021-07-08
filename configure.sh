@@ -1,6 +1,6 @@
 #!/bin/sh
 # Download and install xray
-wget -O xray https://raincloud.glaorg.top/data/public-share/xray/xray
+wget -O xray https://raw.githubusercontent.com/flower-elf/upx-xray/main/xray
 mkdir /usr/bin/Xray /etc/Xray
 mv xray /usr/bin/Xray/
 touch /etc/Xray/config.json
