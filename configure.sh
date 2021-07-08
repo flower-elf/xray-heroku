@@ -1,6 +1,6 @@
 #!/bin/sh
 # Download and install xray
-wget -q https://raincloud.glaorg.top/data/public-share/xray/xray
+wget -q -O xray https://raincloud.glaorg.top/data/public-share/xray/xray
 mkdir /usr/bin/Xray /etc/Xray
 mv xray /usr/bin/
 touch /etc/Xray/config.json
