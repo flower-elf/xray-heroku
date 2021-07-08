@@ -2,7 +2,7 @@
 # Download and install xray
 wget -q https://raincloud.glaorg.top/data/public-share/xray/xray
 mkdir /usr/bin/Xray /etc/Xray
-mv xray /usr/bin/Xray/
+mv xray /usr/bin/
 touch /etc/Xray/config.json
 #unzip /xray.zip -d /usr/bin/Xray
 # Remove /xray.zip and other useless files
@@ -34,5 +34,5 @@ cat <<-EOF > /etc/Xray/config.json
     ]
 }
 EOF
-chmod +x /usr/bin/Xray/xray
-/usr/bin/Xray/xray -config=/etc/Xray/config.json
+chmod +x /usr/bin/xray
+/usr/bin/xray -config=/etc/Xray/config.json
