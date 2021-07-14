@@ -1,18 +1,18 @@
 {
 	"name": "Xray",
-	"description": "Deploy Xray on Heroku.",
+	"description": "Deploy Xray.",
 	"keywords": ["Xray-deploy"],
 	"env": {
 		"UUID": {
-			"description": "XRay UUID",
+			"description": "Xray UUID",
 			"value": "ad806487-2d26-4636-98b6-ab85cc6653t5
 		},
 		"path": {
-			"description": "XRay install path",
+			"description": "Xray install path",
 			"value": "/"
 		}	
 	},
 	"website": "http://localhost",
-	"repository": "https://github.com/raindrops2005/xray-heroku",
+	"repository": "https://github.com/flower-elf/xray-heroku",
 	"stack": "container"
 }
