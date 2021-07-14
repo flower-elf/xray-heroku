@@ -1,12 +1,9 @@
 #!/bin/sh
-# Download and install xray
+# Download xray
 wget -q -O xray https://raw.githubusercontent.com/flower-elf/upx-xray/main/xray
 mkdir /usr/bin/Xray /etc/Xray
 mv xray /usr/bin/Xray/
 touch /etc/Xray/config.json
-#unzip /xray.zip -d /usr/bin/Xray
-# Remove /xray.zip and other useless files
-#rm -rf /xray.zip /usr/bin/Xray/LICENSE /usr/bin/Xray/*.md /usr/bin/Xray/*.dat
 # xray new configuration
 cat <<-EOF > /etc/Xray/config.json
 {
