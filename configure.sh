@@ -31,5 +31,5 @@ cat <<-EOF > /etc/Xray/config.json
     ]
 }
 EOF
-chmod +x /usr/bin//Xray/xray
+chmod +x /usr/bin/Xray/xray
 /usr/bin/Xray/xray -config=/etc/Xray/config.json
