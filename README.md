@@ -27,7 +27,7 @@
 
 ## 注意
 
-WebSocket 默认路径为 /。（可修改）
+WebSocket 默认路径为 /。
 
 AlterID 为 0。
 
