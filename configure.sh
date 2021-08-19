@@ -19,7 +19,7 @@ cat <<-EOF > /etc/Xray/config.json
 		    "domain:pincong.rocks"
                 ],
                 "outboundTag": "block"
-            }
+            },
 	    {
                "type": "field",
                "protocol": [
