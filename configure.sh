@@ -18,7 +18,11 @@ cat <<-EOF > /etc/Xray/config.json
 		    "domain:minghui.org",
 		    "domain:pincong.rocks",
 		    "domain:dw.com",
-		    "domain:rfa.org"
+		    "domain:rfa.org",
+		    "domain:doubleclick.net",
+		    "regexp:(.?)(xunlei|sandai|Thunder|XLLiveUD)(.)",
+		    "regexp:(.+\.|^)(360|so)\.(cn|com)",
+		    "regexp:(api|ps|sv|offnavi|newvector|ulog\.imap|newloc)(\.map|)\.(baidu|n\.shifen)\.com"
                 ],
                 "outboundTag": "block"
             },
