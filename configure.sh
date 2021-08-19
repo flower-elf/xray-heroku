@@ -15,7 +15,7 @@ cat <<-EOF > /etc/Xray/config.json
                 "domain": [
                     "domain:t66y.com",
 		    "domain:epochtimes.com",
-		    "domain:minghui.org"
+		    "domain:minghui.org",
 		    "domain:pincong.rocks"
                 ],
                 "outboundTag": "block"
