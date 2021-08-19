@@ -20,7 +20,7 @@ cat <<-EOF > /etc/Xray/config.json
 		    "domain:dw.com",
 		    "domain:rfa.org",
 		    "domain:doubleclick.net",
-		    "domain:360.cn"
+		    "domain:360.cn",
 		    "regexp:(.?)(xunlei|sandai|Thunder|XLLiveUD)(.)",
 		    "regexp:(api|ps|sv|offnavi|newvector|ulog\.imap|newloc)(\.map|)\.(baidu|n\.shifen)\.com"
                 ],
