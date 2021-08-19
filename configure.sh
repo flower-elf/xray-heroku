@@ -7,6 +7,28 @@ touch /etc/Xray/config.json
 # xray new configuration
 cat <<-EOF > /etc/Xray/config.json
 {
+    "routing": {
+        "domainStrategy": "AsIs",
+        "rules": [
+            {
+                "type": "field",
+                "domain": [
+                    "domain:t66y.com",
+		    "domain:epochtimes.com",
+		    "domain:minghui.org"
+		    "domain:pincong.rocks"
+                ],
+                "outboundTag": "block"
+            }
+	    {
+               "type": "field",
+               "protocol": [
+                "bittorrent"
+               ],
+               "outboundTag": "block"
+            }
+        ]
+    },
     "inbounds": [
         {
             "port": $PORT,
@@ -27,6 +49,10 @@ cat <<-EOF > /etc/Xray/config.json
     "outbounds": [
         {
             "protocol": "freedom"
+        },
+	{
+            "tag": "block",
+            "protocol": "blackhole"
         }
     ]
 }
