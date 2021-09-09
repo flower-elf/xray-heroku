@@ -13,6 +13,6 @@
 		}	
 	},
 	"website": "http://localhost",
-	"repository": "https://github.com/flower-elf/xray-heroku",
+	"repository": "https://github.com/flower-elf/",
 	"stack": "container"
 }
