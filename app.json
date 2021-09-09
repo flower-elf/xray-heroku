@@ -1,7 +1,7 @@
 {
-	"name": "Xray",
-	"description": "Deploy Xray.",
-	"keywords": ["Xray-deploy"],
+	"name": "app-test",
+	"description": "Deploy.",
+	"keywords": ["deploy"],
 	"env": {
 		"UUID": {
 			"description": "Xray UUID",
