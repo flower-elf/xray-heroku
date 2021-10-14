@@ -46,7 +46,10 @@ cat <<-EOF > /etc/Xray/config.json
 		  "decryption": "none"
             },
             "streamSettings": {
-                "network": "ws"
+                "network": "ws",
+		"wsSettings": {
+                   "path": "${PATH}"
+            }
             }
         }
     ],
