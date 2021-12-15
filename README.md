@@ -4,7 +4,7 @@
 
 用于在 Heroku 上部署 Xray Websocket。
 
-**Heroku 为我们提供了免费的容器服务，我们不应该滥用它，所以本项目不宜做为长期翻墙使用。**
+**Heroku 为我们提供了免费的容器服务，我们不应该滥用它，所以本项目不宜长期使用。**
 
 **可以部署两个以上的应用，实现[负载均衡](https://toutyrater.github.io/app/balance.html)
 
