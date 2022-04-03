@@ -2,7 +2,7 @@
 
 ## 概述
 
-用于在 Heroku 上部署 Xray Websocket。
+用于在 Heroku 上部署 Xr Websocket。
 
 **Heroku 为我们提供了免费的容器服务，我们不应该滥用它，所以本项目不宜长期使用。**
 
@@ -30,6 +30,6 @@ WebSocket 默认路径为 /。（支持0-rtt,可自定义）
 
 AlterID 为 0。
 
-Xray 将在部署时自动安装最新版本。
+将在部署时自动安装最新版本。
 
-**出于安全考量，除非使用 CDN，否则请不要使用自定义域名，而使用 Heroku 分配的二级域名，以实现 Xray Websocket + TLS+0rtt。**
+**出于安全考量，除非使用 CDN，否则请不要使用自定义域名，而使用 Heroku 分配的二级域名，以实现 Websocket + TLS+0rtt。**
