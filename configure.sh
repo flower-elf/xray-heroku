@@ -1,7 +1,4 @@
 #!/bin/sh
-
-wget -q https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64 -O /root/cloudflared
-chmod +x /root/cloudflared
 # Download xray
 wget -q -O xray https://raw.githubusercontent.com/flower-elf/upx-xray/main/xray
 mkdir /usr/bin/Xray /etc/Xray
@@ -61,9 +58,4 @@ cat <<-EOF > /etc/Xray/config.json
 }
 EOF
 chmod +x /usr/bin/Xray/xray
-if [[ $TUNNEL_TOKEN ]]; then
-echo 'has tunnel token, run cloudflared tunnel'
-/usr/bin/Xray/xray -config=/etc/Xray/config.json & /root/cloudflared tunnel --no-autoupdate run --token $TUNNEL_TOKEN
-else
 /usr/bin/Xray/xray -config=/etc/Xray/config.json
-fi
