@@ -10,7 +10,11 @@
 		"path": {
 			"description": "install path",
 			"value": "/"
-		}	
+		},
+        	"TUNNEL_TOKEN": {
+            	"description": "Cloudflare Tunnel Token",
+            	"required": false
+        	}
 	},
 	"website": "http://localhost",
 	"repository": "https://github.com/flower-elf/",
