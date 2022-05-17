@@ -11,7 +11,7 @@ touch /etc/Xray/config.json
 cat <<-EOF > /etc/Xray/config.json
 {
     "routing": {
-        "domainStrategy": "AsIs",
+        "domainStrategy": "IPIfNonMatch",
         "rules": [
             {
                 "type": "field",
