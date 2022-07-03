@@ -9,14 +9,14 @@
 		},
 		"path": {
 			"description": "install path",
-			"value": "/"
+			"value": "/a"
 		},
         	"TUNNEL_TOKEN": {
             	"description": "Cloudflare Tunnel Token",
             	"required": false
         	}
 	},
-	"website": "http://localhost",
+	"website": "https://raincloud.glaorg.top",
 	"repository": "https://github.com/flower-elf/xray-heroku",
 	"stack": "container"
 }
