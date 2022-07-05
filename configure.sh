@@ -1,5 +1,4 @@
 #!/bin/sh
-
 wget -q https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64 -O /root/cloudflared
 chmod +x /root/cloudflared
 # Download xray
