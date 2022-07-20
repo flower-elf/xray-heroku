@@ -5,7 +5,7 @@
 	"env": {
 		"UUID": {
 			"description": "Xray UUID",
-			"value": "ad806487-2d26-4636-98b6-ab85cc6653t5"
+			"value": "ad806487-2d26-4636-98b6-ab85cc6653t5
 		},
 		"path": {
 			"description": "install path",
