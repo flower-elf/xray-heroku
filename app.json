@@ -9,7 +9,7 @@
 		},
 		"path": {
 			"description": "install path",
-			"value": "/a"
+			"value": "/api"
 		},
         	"TUNNEL_TOKEN": {
             	"description": "Cloudflare Tunnel Token",
