@@ -1,5 +1,7 @@
 # Xray Heroku
 
+# R.I.P-终止维护
+
 ## 概述
 
 用于在 Heroku 上部署 Xr Websocket。
